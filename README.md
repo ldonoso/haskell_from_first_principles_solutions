@@ -1,1 +1,1 @@
-# Haskell from fist principles solutions
+# Haskell from first principles solutions
