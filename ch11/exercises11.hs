@@ -12,7 +12,7 @@ isSubsequenceOf :: (Eq a) => [a] -> [a] -> Bool
 isSubsequenceOf [] _ = True
 isSubsequenceOf _ [] = False
 isSubsequenceOf l1@(x:xs) l2@(y:ys) =
-    ((x == y) || (isSubsequenceOf l1 ys)) && (isSubsequenceOf xs l2)
+    ((x == y) && (isSubsequenceOf xs ys)) || isSubsequenceOf l1 ys
     
 
 capitalizeWords :: String -> [(String, String)]
